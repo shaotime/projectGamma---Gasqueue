@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    tools:context=".Activitiy.Fragments.UserDialogFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/noButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sureView"
+        android:layout_alignEnd="@+id/sureView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/yesButton"
+        android:layout_below="@+id/sureView"
+        android:layout_alignLeft="@+id/sureView"
+        android:layout_alignStart="@+id/sureView" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Are you sure you want to cancel your current order?"
+        android:id="@+id/sureView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitiy.CreateBarActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Bartender password"
+        android:id="@+id/passwordLbl"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:backgroundTint="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/barPWInput"
+        android:layout_alignBottom="@+id/passwordLbl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="#F44336"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Bar"
+        android:id="@+id/createBarBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_alignRight="@+id/errorLabel2"
+        android:layout_alignEnd="@+id/errorLabel2"
+        android:layout_alignLeft="@+id/errorLabel2"
+        android:layout_alignStart="@+id/errorLabel2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Customer password"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/passwordLbl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:backgroundTint="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/customerPWInput"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/barPWInput"
+        android:layout_alignStart="@+id/barPWInput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Lösenord får inte vara likadan"
+        android:textSize="18dp"
+        android:id="@+id/errorLabel"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Lösenordet skall vara fyra siffror lång"
+        android:textSize="18dp"
+        android:id="@+id/errorLabel2"
+        android:layout_below="@+id/errorLabel"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
